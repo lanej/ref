@@ -1,0 +1,183 @@
+ Current Filetype: javascript.jsx
+Available Linters: ['eslint', 'flow', 'jscs', 'jshint', 'standard', 'tsserver', 'xo', 'csslint', 'stylelint']
+  Enabled Linters: ['eslint', 'flow', 'jscs', 'jshint', 'standard', 'tsserver', 'xo', 'stylelint']
+ Suggested Fixers:
+  'eslint' - Apply eslint --fix to a file.
+  'importjs' - automatic imports for javascript
+  'prettier' - Apply prettier to a file.
+  'prettier_eslint', 'prettier-eslint' - Apply prettier-eslint to a file.
+  'prettier_standard', 'prettier-standard' - Apply prettier-standard to a file.
+  'remove_trailing_lines' - Remove all blank lines at the end of a file.
+  'standard' - Fix JavaScript files using standard --fix
+  'trim_whitespace' - Remove all trailing whitespace characters at the end of every line.
+  'xo' - Fix JavaScript files using xo --fix.
+ Linter Variables:
+
+let g:ale_javascript_eslint_executable = 'npm run list eslint'
+let g:ale_javascript_eslint_options = ''
+let g:ale_javascript_eslint_suppress_eslintignore = 0
+let g:ale_javascript_eslint_suppress_missing_config = 0
+let g:ale_javascript_eslint_use_global = 0
+let g:ale_javascript_flow_executable = 'flow'
+let g:ale_javascript_flow_use_global = 0
+let g:ale_javascript_flow_use_home_config = 0
+let g:ale_javascript_flow_use_respect_pragma = 1
+let g:ale_javascript_jscs_executable = 'jscs'
+let g:ale_javascript_jscs_use_global = 0
+let g:ale_javascript_jshint_executable = 'jshint'
+let g:ale_javascript_jshint_use_global = 0
+let g:ale_javascript_standard_executable = 'standard'
+let g:ale_javascript_standard_options = ''
+let g:ale_javascript_standard_use_global = 0
+let g:ale_javascript_tsserver_config_path = ''
+let g:ale_javascript_tsserver_executable = 'tsserver'
+let g:ale_javascript_tsserver_use_global = 0
+let g:ale_javascript_xo_executable = 'xo'
+let g:ale_javascript_xo_options = ''
+let g:ale_javascript_xo_use_global = 0
+ Global Variables:
+
+let g:ale_cache_executable_check_failures = v:null
+let g:ale_change_sign_column_color = 0
+let g:ale_command_wrapper = ''
+let g:ale_completion_delay = 100
+let g:ale_completion_enabled = 1
+let g:ale_completion_max_suggestions = 50
+let g:ale_echo_cursor = 1
+let g:ale_echo_msg_error_str = 'Error'
+let g:ale_echo_msg_format = '%s'
+let g:ale_echo_msg_info_str = 'Info'
+let g:ale_echo_msg_warning_str = 'Warning'
+let g:ale_enabled = 1
+let g:ale_fix_on_save = 0
+let g:ale_fixers = {'go': ['gofmt'], 'markdown': ['prettier'], 'json': 'prettier', 'sh': ['shfmt'], 'ruby': ['rufo', 'rubocop'], 'javascript.jsx': ['eslint'], 'javscript': ['eslint']}
+let g:ale_history_enabled = 1
+let g:ale_history_log_output = 1
+let g:ale_keep_list_window_open = 0
+let g:ale_lint_delay = 200
+let g:ale_lint_on_enter = 1
+let g:ale_lint_on_filetype_changed = 1
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 'always'
+let g:ale_lint_on_insert_leave = 0
+let g:ale_linter_aliases = {'jsx': 'css'}
+let g:ale_linters = {'jsx': ['stylelint', 'eslint']}
+let g:ale_linters_explicit = 0
+let g:ale_list_window_size = 10
+let g:ale_list_vertical = 0
+let g:ale_loclist_msg_format = '%s'
+let g:ale_max_buffer_history_size = 20
+let g:ale_max_signs = -1
+let g:ale_maximum_file_size = v:null
+let g:ale_open_list = 0
+let g:ale_pattern_options = {}
+let g:ale_pattern_options_enabled = 0
+let g:ale_set_balloons = 0
+let g:ale_set_highlights = 1
+let g:ale_set_loclist = 1
+let g:ale_set_quickfix = 0
+let g:ale_set_signs = 1
+let g:ale_sign_column_always = 0
+let g:ale_sign_error = '>>'
+let g:ale_sign_info = '--'
+let g:ale_sign_offset = 1000000
+let g:ale_sign_style_error = '>>'
+let g:ale_sign_style_warning = '--'
+let g:ale_sign_warning = '--'
+let g:ale_statusline_format = ['%d error(s)', '%d warning(s)', 'OK']
+let g:ale_type_map = {}
+let g:ale_use_global_executables = v:null
+let g:ale_warn_about_trailing_blank_lines = 1
+let g:ale_warn_about_trailing_whitespace = 1
+  Command History:
+
+(executable check - failure) xo
+(finished - exit code 0) ['/bin/zsh', '-c', '/Users/jlane/src/my-app/node_modules/.bin/stylelint  --stdin-filename ''/Users/jlane/src/my-app/src/index.js'' < ''/var/folders/jq/160x3tvs0613ymsntpd3yg5h0000gn/T/nvimslchog/567/index.js''']
+
+<<<NO OUTPUT RETURNED>>>
+
+(started) ['/bin/zsh', '-c', '''/Users/jlane/src/my-app/node_modules/eslint/bin/eslint.js'' -f unix --stdin --stdin-filename ''/Users/jlane/src/my-app/src/index.js'' < ''/var/folders/jq/160x3tvs0613ymsntpd3yg5h0000gn/T/nvimslchog/569/index.js''']
+(started) ['/bin/zsh', '-c', '''/Users/jlane/src/my-app/node_modules/.bin/jscs'' --reporter inline --no-colors - < ''/var/folders/jq/160x3tvs0613ymsntpd3yg5h0000gn/T/nvimslchog/570/index.js''']
+(executable check - failure) jshint
+(executable check - failure) standard
+(executable check - failure) xo
+(started) ['/bin/zsh', '-c', '/Users/jlane/src/my-app/node_modules/.bin/stylelint  --stdin-filename ''/Users/jlane/src/my-app/src/index.js'' < ''/var/folders/jq/160x3tvs0613ymsntpd3yg5h0000gn/T/nvimslchog/571/index.js''']
+(started) ['/bin/zsh', '-c', '''/Users/jlane/src/my-app/node_modules/eslint/bin/eslint.js'' -f unix --stdin --stdin-filename ''/Users/jlane/src/my-app/src/index.js'' < ''/var/folders/jq/160x3tvs0613ymsntpd3yg5h0000gn/T/nvimslchog/572/index.js''']
+(started) ['/bin/zsh', '-c', '''/Users/jlane/src/my-app/node_modules/.bin/jscs'' --reporter inline --no-colors - < ''/var/folders/jq/160x3tvs0613ymsntpd3yg5h0000gn/T/nvimslchog/573/index.js''']
+(executable check - failure) jshint
+(executable check - failure) standard
+(executable check - failure) xo
+(started) ['/bin/zsh', '-c', '/Users/jlane/src/my-app/node_modules/.bin/stylelint  --stdin-filename ''/Users/jlane/src/my-app/src/index.js'' < ''/var/folders/jq/160x3tvs0613ymsntpd3yg5h0000gn/T/nvimslchog/574/index.js''']
+(finished - exit code 1) ['/bin/zsh', '-c', '''/Users/jlane/src/my-app/node_modules/eslint/bin/eslint.js'' -f unix --stdin --stdin-filename ''/Users/jlane/src/my-app/src/index.js'' < ''/var/folders/jq/160x3tvs0613ymsntpd3yg5h0000gn/T/nvimslchog/575/index.js''']
+
+<<<OUTPUT STARTS>>>
+/Users/jlane/src/my-app/src/index.js:6:1: Expected indentation of 4 spaces but found 1 tab. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:7:1: Expected indentation of 8 spaces but found 2 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:8:1: Expected indentation of 8 spaces but found 2 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:9:1: Expected indentation of 12 spaces but found 3 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:10:1: Expected indentation of 8 spaces but found 2 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:11:1: Expected indentation of 4 spaces but found 1 tab. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:12:1: Expected indentation of 4 spaces but found 1 tab. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:12:9: 'i' is defined but never used. [Error/no-unused-vars]
+/Users/jlane/src/my-app/src/index.js:13:1: Expected indentation of 8 spaces but found 2 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:14:1: Expected indentation of 12 spaces but found 3 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:15:1: Expected indentation of 16 spaces but found 4 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:16:1: Expected indentation of 16 spaces but found 4 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:17:1: Expected indentation of 12 spaces but found 3 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:18:1: Expected indentation of 8 spaces but found 2 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:19:1: Expected indentation of 4 spaces but found 1 tab. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:23:1: Expected indentation of 4 spaces but found 1 tab. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:24:1: Expected indentation of 8 spaces but found 2 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:25:1: Expected indentation of 4 spaces but found 1 tab. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:27:1: Expected indentation of 4 spaces but found 1 tab. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:28:1: Expected indentation of 8 spaces but found 2 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:30:1: Expected indentation of 8 spaces but found 2 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:31:1: Expected indentation of 12 spaces but found 3 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:32:1: Expected indentation of 16 spaces but found 4 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:33:1: Expected indentation of 16 spaces but found 4 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:34:1: Expected indentation of 20 spaces but found 5 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:35:1: Expected indentation of 20 spaces but found 5 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:36:1: Expected indentation of 20 spaces but found 5 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:37:1: Expected indentation of 16 spaces but found 4 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:38:1: Expected indentation of 16 spaces but found 4 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:39:1: Expected indentation of 20 spaces but found 5 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:40:1: Expected indentation of 20 spaces but found 5 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:41:1: Expected indentation of 20 spaces but found 5 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:42:1: Expected indentation of 16 spaces but found 4 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:43:1: Expected indentation of 16 spaces but found 4 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:44:1: Expected indentation of 20 spaces but found 5 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:45:1: Expected indentation of 20 spaces but found 5 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:46:1: Expected indentation of 20 spaces but found 5 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:47:1: Expected indentation of 16 spaces but found 4 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:48:1: Expected indentation of 12 spaces but found 3 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:49:1: Expected indentation of 8 spaces but found 2 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:50:1: Expected indentation of 4 spaces but found 1 tab. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:54:1: Expected indentation of 4 spaces but found 1 tab. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:55:1: Expected indentation of 8 spaces but found 2 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:56:1: Expected indentation of 12 spaces but found 3 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:57:1: Expected indentation of 16 spaces but found 4 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:58:1: Expected indentation of 20 spaces but found 5 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:59:1: Expected indentation of 16 spaces but found 4 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:60:1: Expected indentation of 16 spaces but found 4 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:61:1: Expected indentation of 20 spaces but found 5 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:62:1: Expected indentation of 20 spaces but found 5 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:63:1: Expected indentation of 16 spaces but found 4 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:64:1: Expected indentation of 12 spaces but found 3 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:65:1: Expected indentation of 8 spaces but found 2 tabs. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:66:1: Expected indentation of 4 spaces but found 1 tab. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:72:1: Expected indentation of 4 spaces but found 1 tab. [Error/indent]
+/Users/jlane/src/my-app/src/index.js:73:1: Expected indentation of 4 spaces but found 1 tab. [Error/indent]
+
+56 problems
+<<<OUTPUT ENDS>>>
+
+(finished - exit code 4) ['/bin/zsh', '-c', '''/Users/jlane/src/my-app/node_modules/.bin/jscs'' --reporter inline --no-colors - < ''/var/folders/jq/160x3tvs0613ymsntpd3yg5h0000gn/T/nvimslchog/576/index.js''']
+
+<<<NO OUTPUT RETURNED>>>
+
+(executable check - failure) jshint
+(executable check - failure) standard
+(executable check - failure) xo
+(finished - exit code 0) ['/bin/zsh', '-c', '/Users/jlane/src/my-app/node_modules/.bin/stylelint  --stdin-filename ''/Users/jlane/src/my-app/src/index.js'' < ''/var/folders/jq/160x3tvs0613ymsntpd3yg5h0000gn/T/nvimslchog/577/index.js''']
+
+<<<NO OUTPUT RETURNED>>>
